@@ -47,6 +47,28 @@ address {
   font-style: normal;
 }
 
+/* Футер */
+.footer {
+  display: flex;
+  width: 1280px;
+  height: 395px;
+  flex-shrink: 0;
+}
+
+.logo-in-footer {
+  width: 66px;
+  height: 52px;
+  display: flex;
+  padding: 100px 140px 130px 20px;
+}
+
+.navigation-in-footer {
+  display: flex;
+  gap: 28px;
+  padding: 120px 320px 150px 0;
+  margin: 0;
+}
+
 
 .customers {
 }
@@ -60,7 +82,7 @@ address {
 }
 .img-list {
 }
-=======
+
 /* Властивості Хедера */
 .header-div {
 }
