@@ -20,10 +20,11 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!-- Header Богдан -->
     <header>
-      <a href=""><img src="./images/logo.png" alt="logo" width="66" height="52"></a>
+      <a href=""><img src="./images/logo.png" alt="logo" width="66" height="52" /></a>
       <nav>
         <ul>
           <li><a href="">Home</a></li>
@@ -33,7 +34,7 @@
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
-      <button type="button">Order Now</button>
+      <button type="button" data-modal-open>Order Now</button>
     </header>
     <!-- Hero Дмитро -->
     <section>
@@ -52,14 +53,26 @@
     <!-- Favorites Кирило -->
     <section class="favorites">
       <h2 class="favoris-heading">Some of Our Favorites</h2>
-      <p class="favorites-text">Looking for something delicious? </p>
+      <p class="favorites-text">Looking for something delicious?</p>
       <ul class="favorites-list">
-        <li class="favorites-list-item"><img src="./images/gamburger.jpg" alt="food" width="315" height="315"></li>
-        <li class="favorites-list-item"><img src="./images/pasta.jpg" alt="food" width="315" height="315"></li>
-        <li class="favorites-list-item"><img src="./images/pizza.jpg" alt="food" width="315" height="315"></li>
-        <li class="favorites-list-item"><img src="./images/chicken.jpg" alt="food" width="315" height="315"></li>
-        <li class="favorites-list-item"><img src="./images/salat.jpg" alt="food" width="315" height="315"></li>
-        <li class="favorites-list-item"><img src="./images/borshch.jpg" alt="food" width="315" height="315"></li>
+        <li class="favorites-list-item">
+          <img src="./images/gamburger.jpg" alt="food" width="315" height="315" />
+        </li>
+        <li class="favorites-list-item">
+          <img src="./images/pasta.jpg" alt="food" width="315" height="315" />
+        </li>
+        <li class="favorites-list-item">
+          <img src="./images/pizza.jpg" alt="food" width="315" height="315" />
+        </li>
+        <li class="favorites-list-item">
+          <img src="./images/chicken.jpg" alt="food" width="315" height="315" />
+        </li>
+        <li class="favorites-list-item">
+          <img src="./images/salat.jpg" alt="food" width="315" height="315" />
+        </li>
+        <li class="favorites-list-item">
+          <img src="./images/borshch.jpg" alt="food" width="315" height="315" />
+        </li>
       </ul>
     </section>
     <!-- Customers Say Василь -->
@@ -87,6 +100,44 @@
     </section>
     <!-- Subscribe Юра -->
 
+    <!-- Footer В'ячеслав -->
+
+    <!--  modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" data-modal-close type="button">X</button>
+        <p class="modal-title">Order Form</p>
+        <form>
+          <div class="input-wrap">
+            <label for="user-name" class="label-form">Name</label>
+            <input type="text" class="input-form" placeholder="Your name" id="user-name" />
+          </div>
+          <div class="input-wrap">
+            <label for="user-phone" class="label-form">Phone number</label>
+            <input
+              type="tel"
+              class="input-form"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              id="user-phone"
+            />
+          </div>
+          <div class="input-wrap input-email">
+            <label for="user-email" class="label-form">E-mail</label>
+            <input
+              type="email"
+              class="input-form"
+              placeholder="example@gmail.com"
+              id="user-email"
+            />
+          </div>
+          <button class="modal-send-btm" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+
+
     <!-- Footer Рома-->
+
   </body>
 </html>
