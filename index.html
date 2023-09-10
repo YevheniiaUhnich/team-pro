@@ -20,10 +20,30 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <!-- Header Петро -->
+    <!-- Header Дмитро -->
+    <header class="header-div">
+      <div class="header-container">
+        <a class="logo-ico" href=""
+          ><img src="./images/logo.png" alt="logo" width="66" height="52"
+        /></a>
+        <div class="navigation-container">
+          <nav class="navigation">
+            <ul class="navi-ul">
+              <li class="navi-li"><a class="navi-a" href="">Home</a></li>
+              <li class="navi-li"><a class="navi-a" href="">About</a></li>
+              <li class="navi-li"><a class="navi-a" href="">Servise</a></li>
+              <li class="navi-li"><a class="navi-a" href="">Menu</a></li>
+              <li class="navi-li"><a class="navi-a" href="">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="order-btn" type="button">Order Now</button>
+        </div>
+      </div>
+    <!-- Header Богдан -->
     <header>
-      <a href=""><img src="./images/logo.png" alt="logo" width="66" height="52"></a>
+      <a href=""><img src="./images/logo.png" alt="logo" width="66" height="52" /></a>
       <nav>
         <ul>
           <li><a href="">Home</a></li>
@@ -33,9 +53,10 @@
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
-      <button type="button">Order Now</button>
+      <button type="button" data-modal-open>Order Now</button>
+
     </header>
-    <!-- Hero Євгенія -->
+    <!-- Hero Дмитро -->
     <section>
       <h1>Enjoy Your Favorite Food From Anywhere</h1>
       <p>
@@ -47,44 +68,59 @@
       <img src="./images/food-1.jpg" alt="food" height="528" width="528" />
     </section>
     <!-- Offerings Оля -->
+
+    
     <!-- Favorites Кирило -->
     <section class="favorites">
       <h2 class="favoris-heading">Some of Our Favorites</h2>
-      <p class="favorites-text">Looking for something delicious? </p>
+      <p class="favorites-text">Looking for something delicious?</p>
       <ul class="favorites-list">
-        <li class="favorites-list-item"><img src="./images/gamburger.jpg" alt="food" width="315" height="315"></li>
-        <li class="favorites-list-item"><img src="./images/pasta.jpg" alt="food" width="315" height="315"></li>
-        <li class="favorites-list-item"><img src="./images/pizza.jpg" alt="food" width="315" height="315"></li>
-        <li class="favorites-list-item"><img src="./images/chicken.jpg" alt="food" width="315" height="315"></li>
-        <li class="favorites-list-item"><img src="./images/salat.jpg" alt="food" width="315" height="315"></li>
-        <li class="favorites-list-item"><img src="./images/borshch.jpg" alt="food" width="315" height="315"></li>
+        <li class="favorites-list-item">
+          <img src="./images/gamburger.jpg" alt="food" width="315" height="315" />
+        </li>
+        <li class="favorites-list-item">
+          <img src="./images/pasta.jpg" alt="food" width="315" height="315" />
+        </li>
+        <li class="favorites-list-item">
+          <img src="./images/pizza.jpg" alt="food" width="315" height="315" />
+        </li>
+        <li class="favorites-list-item">
+          <img src="./images/chicken.jpg" alt="food" width="315" height="315" />
+        </li>
+        <li class="favorites-list-item">
+          <img src="./images/salat.jpg" alt="food" width="315" height="315" />
+        </li>
+        <li class="favorites-list-item">
+          <img src="./images/borshch.jpg" alt="food" width="315" height="315" />
+        </li>
       </ul>
     </section>
     <!-- Customers Say Василь -->
-
-    <section>
-      <h2>What our Customers Say</h2>
-      <p>Don't just take our word for it - see what our satisfied customers have to say</p>
-      <ul>
-        <li>
-          <p>
+    <section class="customers">
+      <h2 class="title-customers">What our Customers Say</h2>
+      <p class="text">Don't just take our word for it - see what our satisfied customers have to say</p>
+      <ul class="customers-list">
+        <li class="customers-info">
+          <p class="text">
             “The Best app I have used to order food in a while, so many options to choose from too,
             I would recommend to a freind, No questions asked”
           </p>
-          <img src="./images/Sumith-Shah-1.jpg" alt="Man" width="48" height="48" />
+          <img class="img-list" src="./images/Sumith-Shah-1.jpg" alt="Man" width="48" height="48" />
           <h3>Sumith Shah</h3>
           <p>Some Dude</p>
         </li>
-        <li>
-          <p></p>
-          <img src="./images/Sumith-Shah-2.jpg" alt="Women" width="48" height="48" />
+        <li class="customers-info">
+          <p>“The ease with which I can just go in and order what i want was amazing, It has been a very pleasant experience ordering from this app”</p>
+          <img class="img-list" src="./images/Sumith-Shah-2.jpg" alt="Women" width="48" height="48" />
           <h3>Sumith Shah</h3>
           <p>Some Dude</p>
         </li>
       </ul>
     </section>
     <!-- Subscribe Юра -->
+
     <!-- Footer В'ячеслав -->
+
     <footer class="footer">
       <div class="logo-in-footer">
         <svg xmlns="http://www.w3.org/2000/svg" width="66" height="52" viewBox="0 0 66 52" fill="none">
@@ -111,5 +147,44 @@
         <li><a href="">Contact</a></li>
       </ul>
     </footer>
+
+
+    <!--  modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" data-modal-close type="button">X</button>
+        <p class="modal-title">Order Form</p>
+        <form>
+          <div class="input-wrap">
+            <label for="user-name" class="label-form">Name</label>
+            <input type="text" class="input-form" placeholder="Your name" id="user-name" />
+          </div>
+          <div class="input-wrap">
+            <label for="user-phone" class="label-form">Phone number</label>
+            <input
+              type="tel"
+              class="input-form"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              id="user-phone"
+            />
+          </div>
+          <div class="input-wrap input-email">
+            <label for="user-email" class="label-form">E-mail</label>
+            <input
+              type="email"
+              class="input-form"
+              placeholder="example@gmail.com"
+              id="user-email"
+            />
+          </div>
+          <button class="modal-send-btm" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+
+
+    <!-- Footer Рома-->
+
   </body>
 </html>
